@@ -13,7 +13,8 @@ export default class Page {
     constructor () {
         this.searchButton          = Selector('#search_button_homepage');//dalem tu id
         this.searchInput		   = Selector('#search_form_input_homepage');//id tak samo
-		this.triedTestCafeCheckbox = Selector('#tried-test-cafe');
+		this.body                  = Selector('#links');
+        this.triedTestCafeCheckbox = Selector('#tried-test-cafe');
         this.populateButton        = Selector('#populate');
         this.submitButton          = Selector('#submit-button');
         this.results               = Selector('.result-content');
