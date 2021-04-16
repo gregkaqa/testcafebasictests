@@ -14,6 +14,8 @@ export default class Page {
         this.searchButton          = Selector('#search_button_homepage');//dalem tu id
         this.searchInput		   = Selector('#search_form_input_homepage');//id tak samo
 		this.body                  = Selector('#links');
+        this.fileupload            = Selector('#fileupload');
+        this.fileuploadlinks       = Selector('#btn btn-primary btngrp');
         this.triedTestCafeCheckbox = Selector('#tried-test-cafe');
         this.populateButton        = Selector('#populate');
         this.submitButton          = Selector('#submit-button');
