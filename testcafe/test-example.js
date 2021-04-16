@@ -5,17 +5,23 @@ fixture `My pierwsza fixturamikstura`
 
 const page = new Page();
 
-// test('Moj super tescik', async t => {
-//     await t
-//         .typeText(page.searchInput, 'pogoda lublin')
-//         .click(page.searchButton)
-// 		.wait(10000)//czekamy sobie ms 10000ms=10s
-//         //.click(page.featureList[0].checkbox)
-//        // .click(page.interfaceSelect)
-//        // .click(page.interfaceSelectOption.withText('Both'))
-//        // .expect(page.nameInput.value).contains('Peter');
-// })
-test('Drugi test ASERCJE', async t => {
+ test('Test Numer 1', async t => {
+     await t
+        .typeText(page.searchInput, 'pogoda lublin')
+        .click(page.searchButton)
+ })
+ test('Test Numer 2', async t => {
+    await t
+       .typeText(page.searchInput, 'pogoda lublin')
+       .click(page.searchButton)
+})
+test.only('Test Numer 3', async t => {
+    await t
+       .typeText(page.searchInput, 'pogoda lublin')
+       .click(page.searchButton)
+        .wait(10000)//czekamy sobie ms 10000ms=10s
+})
+test('Test Numer 4', async t => {
 await t
         .typeText(page.searchInput, 'krzywa wieża w pizie')
         .click(page.searchButton)
